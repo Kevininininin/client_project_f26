@@ -17,11 +17,8 @@ header, main {
 }
 
 footer {
-    padding: 5rem 1.5rem 2rem 1.5rem;
-}
-
-header {
-    border-bottom: 0.3rem solid #ffcb05;
+    padding: 3rem 1.5rem 5rem 1.5rem;
+    border-top: 0.5rem solid #ffcb05;
 }
 
 h1, h2, h3, h4 {
@@ -33,6 +30,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
+    color: white;
     font-size: 2rem;
     margin-top: 2rem;
 }
@@ -90,6 +88,10 @@ a:focus {
 }
 
 /* formatting Nav section */
+header {
+    background-color: #00274c;
+}
+
 nav ul {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -214,7 +216,6 @@ th, td {
 }
 
 footer {
-    border-top: 0.3rem solid #ffcb05;
     background-color: #00274c;
     color: #ffffff;
 }
