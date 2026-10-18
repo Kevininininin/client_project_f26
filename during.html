@@ -18,7 +18,8 @@
             <li><a href = "index.html">Home</a></li>
             <li><a href = "prep.html">Preparing for Your Experience</a></li>
             <li><a href = "start.html">Starting Your Experience</a></li>
-            <li><a href = "during.html">During Your Experience</a></li>
+            <!-- Current-page identification assisted with ChatGPT. I learned about the use case of aria-current from asking chatGPT -->
+            <li><a href = "during.html" aria-current="page">During Your Experience</a></li>
         </ul>
     </nav>
     
@@ -28,9 +29,7 @@
 
     <main id="main">
 
-    <section>
-        <p>Master the art of adaptive project management, human-centered fieldwork, and constructive feedback as you execute your project in real time.</p>
-    </section>
+    <p>Master the art of adaptive project management, human-centered fieldwork, and constructive feedback as you execute your project in real time.</p>
 
     <section>
         <img 
@@ -57,7 +56,7 @@
 
         <article>
             <h4>Table of resources</h4>
-            <div class="table-scroll" aria-label="Resources table" tabindex="0">
+            <div class="table-scroll" role="region" aria-label="Resources table" tabindex="0">
             <table>
                 <tr>
                     <th>Category</th>

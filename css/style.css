@@ -117,6 +117,13 @@ nav a {
     background-color: #f7f7f7;
 }
 
+/* Current-page navigation styling assisted with ChatGPT. */
+nav a[aria-current="page"] {
+    background-color: #ffcb05;
+    font-weight: bold;
+    border-bottom: 0.35rem solid #00274c;
+}
+
 /* program grid */
 .program-grid {
     display: grid;
