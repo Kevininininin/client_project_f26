@@ -1,9 +1,3 @@
-/* Basic shared styles drafted with OpenAI Codex assistance.
-   U-M brand color reference: https://brand.umich.edu/design-resources/colors/
-   Michigan Blue: #00274c; Michigan Maize: #ffcb05.
-   Arial is a simple system-font choice; no downloaded fonts are required.
-*/
-
 * {
     box-sizing: border-box;
 }
@@ -89,27 +83,95 @@ a:hover {
     color: #00274c;
 }
 
-a:focus-visible {
+a:focus {
     outline: 0.2rem solid #00274c;
-    outline-offset: 0.2rem;
     background-color: #ffcb05;
     color: #00274c;
 }
 
+/* formatting Nav section */
 nav ul {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 0.5rem;
     list-style: none;
     padding-left: 0;
     margin-top: 1rem;
 }
 
-nav ul li a {
-    padding: 0.25rem 0;
+nav ul li {
+    margin-bottom: 0;
 }
 
 nav a {
     display: block;
     padding: 0.75rem;
     font-weight: bold;
+    height: 100%;
+    border: 0.125rem solid #3d3d3d;
+    /* not setting boarder radius cuz i think it doesn't look good with the umich aesthetic */
+    text-align: center;
+    overflow-wrap: anywhere;
+    background-color: #f7f7f7;
+}
+
+/* program grid */
+.program-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem;
+}
+
+.program-card {
+    min-width: 0;
+    margin-bottom: 0;
+    padding: 1rem;
+    /* border: 0.125rem solid #00274c; */
+    /* border-radius: 0.5rem; */
+    background-color: #2f65a7;
+    overflow-wrap: anywhere;
+}
+
+.program-card h3 a,
+.program-card p {
+    color: white;
+    font-weight:normal;
+}
+
+/* An alternative listed item in grey cards */
+.grey-card-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 1rem;
+    padding-left: 0;
+}
+
+ul.grey-card-grid {
+    list-style: none;
+}
+
+ol.grey-card-grid {
+    list-style-position: inside;
+}
+
+.grey-card-grid > li {
+    min-width: 0;
+    margin-bottom: 0;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    color: #202020;
+    overflow-wrap: anywhere;
+}
+
+.grey-card-grid a {
+    color: #333333;
+}
+
+.grey-card-grid a:hover,
+.grey-card-grid a:focus {
+    background-color: #d6d6d6;
+    color: #111111;
+    outline-color: #333333;
 }
 
 img {
@@ -125,7 +187,7 @@ iframe {
     aspect-ratio: 16 / 9;
 }
 
-/* Scrollable table container added with OpenAI Codex assistance. */
+/* making table scrollable so it won't make the whole site horizontally wider */
 .table-scroll {
     max-width: 100%;
     overflow-x: auto;
