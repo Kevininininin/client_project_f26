@@ -1,0 +1,177 @@
+/* Basic shared styles drafted with OpenAI Codex assistance.
+   U-M brand color reference: https://brand.umich.edu/design-resources/colors/
+   Michigan Blue: #00274c; Michigan Maize: #ffcb05.
+   Arial is a simple system-font choice; no downloaded fonts are required.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "IBM Plex Sans", Montserrat, "Nunito Sans", Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #202020;
+    background-color: #ffffff;
+}
+
+header, main {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+}
+
+footer {
+    padding: 5rem 1.5rem 2rem 1.5rem;
+}
+
+header {
+    border-bottom: 0.3rem solid #ffcb05;
+}
+
+h1, h2, h3, h4 {
+    color: #00274c;
+    font-weight: bold;
+    line-height: 1.25;
+    
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+p, ul, ol {
+    margin-bottom: 1rem;
+}
+
+section, aside {
+    margin-bottom: 2rem;
+}
+
+article {
+    margin-bottom: 1.5rem;
+}
+
+ul, ol {
+    padding-left: 1.5rem;
+}
+
+ul {
+    list-style: disc;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+a {
+    color: #00274c;
+    text-decoration: underline;
+}
+
+a:hover {
+    background-color: #ffcb05;
+    color: #00274c;
+}
+
+a:focus-visible {
+    outline: 0.2rem solid #00274c;
+    outline-offset: 0.2rem;
+    background-color: #ffcb05;
+    color: #00274c;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1rem;
+}
+
+nav ul li a {
+    padding: 0.25rem 0;
+}
+
+nav a {
+    display: block;
+    padding: 0.75rem;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    height: auto;
+    /* forcing consistent height for aesthetic purpose */
+    aspect-ratio: 16 / 9;
+}
+
+/* Scrollable table container added with OpenAI Codex assistance. */
+.table-scroll {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.table-scroll table {
+    width: 100%;
+    min-width: 40rem;
+}
+
+.table-scroll:focus-visible {
+    outline: 0.2rem solid #00274c;
+    outline-offset: 0.2rem;
+}
+
+th {
+    font-weight: bold;
+}
+
+th, td {
+    padding: 0.5rem;
+    border: 1px solid #cccccc;
+    text-align: left;
+}
+
+footer {
+    border-top: 0.3rem solid #ffcb05;
+    background-color: #00274c;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+.skip-link {
+    position: absolute;
+    top: -60px;
+    z-index: 1000;
+
+    /* styling */
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+}
+
+.skip-link:focus {
+    top: 0px;
+}

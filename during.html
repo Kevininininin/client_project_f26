@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>During your experience</title>
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <a href = "#main">Skip to Main Content</a>
+    <a class="skip-link" href = "#main">Skip to Main Content</a>
     <br>
 
     <header>
@@ -54,7 +56,8 @@
 
         <article>
             <h4>Table of resources</h4>
-            <table style="text-align: left;">
+            <div class="table-scroll" aria-label="Resources table" tabindex="0">
+            <table>
                 <tr>
                     <th>Category</th>
                     <th>Resource Name</th>
@@ -103,6 +106,7 @@
                     <td>Hands-on tool for breaking down project goals into milestones and task assignments.</td>
                 </tr>
             </table>
+            </div>
         </article>
     </section>
     </main>
