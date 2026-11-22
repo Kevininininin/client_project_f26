@@ -76,11 +76,6 @@ a {
     text-decoration: underline;
 }
 
-a:hover {
-    background-color: #ffcb05;
-    color: #00274c;
-}
-
 a:focus {
     outline: 0.2rem solid #00274c;
     background-color: #ffcb05;
@@ -111,13 +106,12 @@ nav a {
     font-weight: bold;
     height: 100%;
     border: 0.125rem solid #3d3d3d;
-    /* not setting boarder radius cuz i think it doesn't look good with the umich aesthetic */
+    border-radius: 8px;
     text-align: center;
     overflow-wrap: anywhere;
     background-color: #f7f7f7;
 }
 
-/* Current-page navigation styling assisted with ChatGPT. */
 nav a[aria-current="page"] {
     background-color: #ffcb05;
     font-weight: bold;
@@ -135,6 +129,7 @@ nav a[aria-current="page"] {
     min-width: 0;
     margin-bottom: 0;
     padding: 1rem;
+    border-radius: 8px;
     /* border: 0.125rem solid #00274c; */
     /* border-radius: 0.5rem; */
     background-color: #2f65a7;
@@ -167,9 +162,19 @@ ol.grey-card-grid {
     min-width: 0;
     margin-bottom: 0;
     padding: 1rem;
+    border-radius: 8px;
     background-color: #f0f0f0;
     color: #202020;
     overflow-wrap: anywhere;
+}
+
+.grey-card-grid > li#highlight {
+  background-color: #ffcb05;
+}
+
+.grey-card-grid #highlight a {
+  color: darkblue;
+  font-weight: bold;
 }
 
 .grey-card-grid a {
@@ -186,6 +191,7 @@ ol.grey-card-grid {
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 iframe {
@@ -194,6 +200,7 @@ iframe {
     height: auto;
     /* forcing consistent height for aesthetic purpose */
     aspect-ratio: 16 / 9;
+    border-radius: 8px;
 }
 
 /* making table scrollable so it won't make the whole site horizontally wider */
@@ -244,6 +251,21 @@ footer a {
 
 .skip-link:focus {
     top: 0px;
+}
+
+/* Hover effects */
+nav a:hover,
+nav a:focus-visible {
+    background-color: #ffcb05;
+}
+
+.program-card:hover,
+.grey-card-grid > li:hover {
+    background-color: #d6d6d6;
+}
+
+a:hover {
+    color: #3d5f80;
 }
 
 @media (min-width: 768px) {
